@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO CON BANNER */
+header{
+    background-image: url(../img/banner2.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header:before{
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(2, 27, 27, 0.274);
+}
+
+header .waves{
+    position: absolute;
+    top: 308px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    margin-top: 5%;
+    text-shadow: 1px 6px 6px rgb(0, 0, 0);
+}
+
+#parrafoprincipal{
+    color: rgb(238, 238, 238);
+    text-shadow: 1px 6px 6px rgb(0, 0, 0);
+    font-style: italic;
+}
+
+#button{
+    margin-top: 8%;
+}
+
+/* CUERPO DE PÁGINA-TARJETAS-FORMULARIO */
+
+.card{
+    height: 80%;
+    margin: 50px 50px; 
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#bodyform{
+    background: radial-gradient(farthest-corner at 20px 30px, rgb(199, 3, 78), rgba(247, 189, 32, 0.671));
+    width: 30%;
+    padding: 0px 3%;
+    border-radius: 10%;
+}
+
+/* FOOTER */
+
+.copyright{
+    margin-right: 5%; 
+    text-align: center;
+}

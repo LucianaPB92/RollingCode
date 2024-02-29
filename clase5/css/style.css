@@ -1,0 +1,46 @@
+/* Selector de etiqueta */
+/* selector{propiedad:Valor} */
+body{
+    background-color: rgb(153, 73, 17);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 247, 255);
+    width: 75%;
+      
+}
+header {
+    background-image: url(../img/800w-djgkXbO3kTQ.webp);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 400px;
+}
+/* selector id */
+#img{
+    border-radius: 0px 20px 10px 5px;
+    height: 400px;
+}
+#img2{
+    opacity: 0.7;
+}
+article{
+    width: 45%;
+    float: left;
+}
+p{
+    text-align: justify;
+}

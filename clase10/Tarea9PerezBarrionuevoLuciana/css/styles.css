@@ -1,0 +1,316 @@
+
+*{
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(../img/Background-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -1000px;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* ENCABEZADO CON BARRA DE NAVEGACIÓN */
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(../img/hero-hollywoodstudios.jpg);
+    color: blanchedalmond;
+    margin: 0px;
+    padding-bottom: 30px; 
+    padding-top: 30px;
+}
+
+nav{
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    width: 90px;
+}
+
+#titulo {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(6, 235, 223, 0.911);
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0; 
+}
+
+#menu li {
+    background-color: rgb(5, 3, 24);
+    font-weight: bolder;
+    width: fit-content;
+    justify-content: center;
+    padding: 9px;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 0px 15px 15px 0px; 
+    transition: 0.5s;
+}
+
+#menu li:hover {
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 5px 5px 9px rgb(255, 252, 252);
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#menu li i{
+    margin-right: 10px;
+}
+#search {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* CONTENIDO PRINCIPAL O MAIN */
+
+.contenido{
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.contenido h3 { 
+   text-shadow: 7px 2px 7px rgb(226, 7, 215);
+   padding: 5px 0px;
+}
+
+.article-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    margin: 26px;
+}
+
+#recent-agree .article-box article:first-child{
+    order: 1;
+}
+
+#recent-agree .article-box article:nth-child(2){
+    order: 2;
+}
+
+.imagenes {
+    height: 250px;
+    width: 180px;
+    margin: 20px 20px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.imagenes:hover{
+    box-shadow: 5px 5px 9px white;
+    transform: scale(1.2);
+}
+
+/* FOOTER O PIE DE PAGINA  */
+
+footer {
+    color: white;
+    background-color: rgba(0, 4, 5, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+
+/* medidas de mobile */
+
+@media (min-width:320px) and (max-width:480px) {
+
+    body{
+        background: url(../img/gradient-background-color-background-gradient-wallpaper-mobile-ios-android_873925-69565.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu{
+        position: relative;
+    }
+
+    #menu, ul {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    #menu li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    #menu li:hover {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .article-box{
+        display: flex;
+        
+        justify-content: flex-start;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .article-box .imagenes{
+        scroll-snap-align: center;
+        object-fit: cover;
+    }
+
+    .imagenes{
+        height: fit-content;
+    }
+
+    footer{
+       padding: 30px;
+    }
+
+}
+
+/* medidas para desktop */
+
+@media (min-width: 1024px) and (max-width: 1920px){
+
+    html{
+        width: 100vw;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        box-sizing: border-box;
+        background-position: center;
+        background-size:  cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+    }
+
+    header{
+        width: 100vw;
+        background-size: contain;
+    }
+
+    #menu, ul{
+        width: 65vw;
+    }
+
+    #menu li{
+        display: flex;
+        width: 11vw;
+        margin-left: 0px;
+        margin-right: 2%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #menu li a{
+        font-size: 60%;
+        text-align: center;
+        letter-spacing: 1px;
+            
+    }
+        
+    #menu li i{
+        margin-right: 4px;
+    }
+
+    #search{
+         width: 90%;
+        margin-right: 3px;
+    }
+
+    main{
+        width: 100vw;
+    }
+        
+    .contenido{
+        width: 100vw;
+    }
+
+    .article-box{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        /* overflow: hidden; */
+    }
+
+    article{
+        display: flex;
+        width: 16%;
+        margin:2px;
+        height: 189px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenes{
+        width: 70%;
+        margin: 0px;
+        height: 90%;   
+    }
+}
+
+    
+
+
+
+
+
+
+
