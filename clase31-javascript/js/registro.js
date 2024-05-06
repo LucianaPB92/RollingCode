@@ -44,7 +44,4 @@ function validarEmail() {
     
 }
 //3. creamos funcion crearUsuario
-function crearUsuario(usuario) {
-    
-}
 
